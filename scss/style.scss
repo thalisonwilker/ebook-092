@@ -1,0 +1,41 @@
+// Main Sass File https://arthurmcmahon.com/blog/
+$img_path: '../img/';
+$bg-overlay: rgba(83, 92, 104, .7);
+$home-height: 650px;
+$home-mobile-height: 1100px;
+$default-blue: rgba(19, 15, 64,1.0);
+
+.home{
+	background-image: url($img_path+'home.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: $home-height;
+
+	.home-inner{
+		background-color: $bg-overlay;
+		height: $home-height;
+	}
+}
+.fa-media {
+	margin-top: -7px;
+	padding: 10px;
+	border: 3px dotted $default-blue;
+}
+.get-free{
+	background-color: $default-blue;
+}
+section{
+	border-bottom: 6px solid #333;
+}
+
+// mobile
+
+@media screen and(max-width: 600px) {
+	.home{
+		height: $home-mobile-height;
+		.home-inner{
+			height: $home-mobile-height;
+		}
+	}
+	
+}
